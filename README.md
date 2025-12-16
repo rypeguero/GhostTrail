@@ -71,7 +71,7 @@ These artifacts provide immediate answers to:
 
 ## Example Lineage Graph
 
-![GhostTrail Lineage Graph](docs/images/ghosttrail-lineage.png)
+![GhostTrail Lineage Graph](https://github.com/rypeguero/GhostTrail/blob/main/lineage.png?raw=true)
 
 The graph shows the full ancestry from `systemd` through `sshd`, the user shell, and the triggering process.
 
