@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+alerts.jsonl
+incidents/
+.env
+*.log
