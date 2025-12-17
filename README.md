@@ -101,7 +101,7 @@ Each incident preserves the triggering event and full process lineage for invest
 
 ## Example Lineage Graph
 
-![GhostTrail Lineage Graph](https://github.com/rypeguero/GhostTrail/blob/main/lineage.png?raw=true)
+![GhostTrail Lineage Graph](docs/images/lineage.png)
 
 The graph shows the full ancestry from `systemd` through `sshd`, the user shell, and the triggering process.
 
