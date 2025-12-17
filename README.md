@@ -69,6 +69,36 @@ These artifacts provide immediate answers to:
 
 ---
 
+## Deception in Action
+
+GhostTrail uses deception to generate high-confidence security alerts.
+Decoy files are placed in realistic locations on disk and should never be accessed during normal operation.
+Any interaction with a decoy immediately triggers an incident.
+
+### 1. Decoy File (Cause)
+The decoy below mimics a production environment file containing sensitive credentials.
+This type of file is commonly targeted during post-exploitation.
+
+![Decoy File](docs/images/decoy.png)
+
+---
+
+### 2. Detection Trigger (Immediate Alert)
+As soon as the decoy file is accessed, GhostTrail detects the action and generates a high-signal alert.
+No signatures, polling, or log parsing are required.
+
+![Detection Trigger](docs/images/trigger.png)
+
+---
+
+### 3. Incident Evidence (Preserved Context)
+GhostTrail automatically creates a self-contained incident directory.
+Each incident preserves the triggering event and full process lineage for investigation.
+
+![Incident Folder](docs/images/incidents.png)
+
+---
+
 ## Example Lineage Graph
 
 ![GhostTrail Lineage Graph](https://github.com/rypeguero/GhostTrail/blob/main/lineage.png?raw=true)
